@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/colorPrimary"
+    tools:context="Activities.MainActivity">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center_vertical"
+      android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:textColor="#55f2dd"
+        />
+
+    <EditText
+        style="@style/editText_style"
+        android:hint="@string/hint_username"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/et_username"/>
+
+    <EditText
+        style="@style/editText_style"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/et_password"/>
+    <EditText
+        style="@style/editText_style"
+        android:hint="@string/hint_confirmpassword"
+        android:inputType="textPassword"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/et_password1"/>
+    <EditText
+        style="@style/editText_style"
+        android:hint="@string/hint_phone"
+        android:inputType="phone"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/et_phone"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+      <EditText
+          style="@style/editText_style"
+          android:layout_width="210dp"
+          android:text=" \ Location"
+          android:textColor="#8c8b8b"
+          android:id="@+id/tv_address"
+          android:layout_marginLeft="22dp"
+          android:layout_centerVertical="true"
+          />
+      <Button
+          style="@style/button_style"
+          android:layout_width="wrap_content"
+          android:id="@+id/choose_location"
+          android:layout_toRightOf="@id/tv_address"
+          android:text="choose"/>
+    </LinearLayout>
+
+    <Button
+        style="@style/button_style"
+        android:layout_marginTop="17dp"
+        android:text="Register"
+        android:id="@+id/bn_register"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loginText"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:clickable="true"
+        android:textSize="14dp"
+        android:textStyle="italic"
+        android:id="@+id/tv_login"/>
+  </LinearLayout>
+
+</RelativeLayout>
